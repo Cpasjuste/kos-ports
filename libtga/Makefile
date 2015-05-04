@@ -1,0 +1,18 @@
+# Port Metadata
+PORTNAME = 			libtga
+PORTVERSION = 		2.0.0
+
+# No dependencies beyond the base system.
+DEPENDENCIES =
+
+# What files we need to download, and where from.
+GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libtga
+
+TARGET =			libtga.a
+INSTALLED_HDRS =	include/tga.h
+HDR_INSTDIR =       tga
+
+# KOS Distributed extras (to be copied into the build tree)
+KOS_DISTFILES =		KOSMakefile.mk
+
+include ${KOS_PORTS}/scripts/kos-ports.mk
