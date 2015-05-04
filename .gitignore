@@ -1,0 +1,7 @@
+.*.swp
+*~
+*.tmp
+build-stamp
+include/*
+lib/*.a
+.DS_Store
