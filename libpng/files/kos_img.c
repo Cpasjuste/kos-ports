@@ -10,7 +10,6 @@
 
 #include <kos.h>
 #include <assert.h>
-#include <png/png.h>
 #include "png.h"
 #include "readpng.h"
 

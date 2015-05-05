@@ -1,5 +1,4 @@
 #include <kos.h>
-#include <png/png.h>
 #include "png.h"
 #include "readpng.h"
 
