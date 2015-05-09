@@ -23,11 +23,20 @@ fetch:
 		if [ -n "${GIT_REPOSITORY}" ] ; then \
 			if [ ! -d "${PORTNAME}-${PORTVERSION}" ] ; then \
 				echo "Fetching ${PORTNAME} from ${GIT_REPOSITORY} ..." ; \
-				git clone ${GIT_REPOSITORY} ${PORTNAME}-${PORTVERSION} ; \
+				if [ -n "${GIT_BRANCH}" ] ; then \
+					git clone ${GIT_REPOSITORY} --branch ${GIT_BRANCH} --single-branch ${PORTNAME}-${PORTVERSION} ; \
+				else \
+					git clone ${GIT_REPOSITORY} ${PORTNAME}-${PORTVERSION} ; \
+				fi ; \
 			else \
 				echo "Updating ${PORTNAME} from ${GIT_REPOSITORY} ..." ; \
 				cd ${PORTNAME}-${PORTVERSION} ; \
 				git pull ; \
+				cd .. ; \
+			fi ; \
+			if [ -n "${GIT_CHANGESET}" ] ; then \
+				cd ${PORTNAME}-${PORTVERSION} ; \
+				git reset --hard ${GIT_CHANGESET} ; \
 			fi ; \
 		elif [ -n "${SVN_REPOSITORY}" ] ; then \
 			if [ ! -d "${PORTNAME}-${PORTVERSION}" ] ; then \
