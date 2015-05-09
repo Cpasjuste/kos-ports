@@ -2,8 +2,7 @@
 PORTNAME = 			libparallax
 PORTVERSION = 		2.0.0
 
-# No dependencies beyond the base system.
-DEPENDENCIES =
+DEPENDENCIES =      libpng libjpeg libkmg
 
 # What files we need to download, and where from.
 GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libparallax
