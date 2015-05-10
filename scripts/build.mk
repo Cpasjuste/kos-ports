@@ -14,7 +14,7 @@ build-stamp: fetch unpack copy-kos-files
 	fi
 	touch build-stamp
 
-install: version-check depends-check force-install
+install: setup-check version-check depends-check force-install
 
 force-install: build-stamp
 	@if [ ! -d "inst" ] ; then \

@@ -3,5 +3,7 @@
 *.tmp
 build-stamp
 include/*
-lib/*.a
+lib/*
+examples/*
+inst
 .DS_Store
