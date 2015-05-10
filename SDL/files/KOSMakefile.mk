@@ -77,7 +77,7 @@ replacefiles:
 	cp ../../files/SDL_dcmouse.c src/video/dc/
 	cp ../../files/SDL_dcvideo.[ch] src/video/dc/
 	cp ../../files/SDL_config_dreamcast.h include/
-	sed -e 's/#if defined(__DREAMCAST__)/#if defined\(_arch_dreamcast\)/' -i "" include/SDL_config.h
+	sed -e 's/#if defined(__DREAMCAST__)/#if defined\(_arch_dreamcast\)/' -ibak include/SDL_config.h
 
 KOS_CFLAGS += -Isrc -Isrc/audio -Isrc/cdrom -Isrc/endian -Isrc/events \
 	          -Isrc/joystick -Isrc/thread/dc -Isrc/thread -Isrc/timer \
