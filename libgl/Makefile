@@ -2,6 +2,10 @@
 PORTNAME = 			libgl
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Josh Pearson <ph3nom@users.sourceforge.net>
+LICENSE =           KOS License
+SHORT_DESC =        OpenGL (tm) like graphics library for KOS
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 
