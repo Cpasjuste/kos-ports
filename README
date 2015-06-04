@@ -49,6 +49,8 @@ interested in:
 - clean: Clean up any dist files and intermediate build results.
 - uninstall: Uninstall the port. This does not make sure dependencies are still
              fulfilled, so keep that in mind.
+- portinfo: Print to the terminal a description and various metadata about the
+            port in question.
 
 Lesser used targets (mainly for internal use):
 - clean-dist: Clean up any dist files. Does not clean build files.

@@ -1,0 +1,5 @@
+zlib is a free, open-source, general purpose lossless data compression library.
+It is believed to be legally unencumbered by patents. The compression algorithm
+used is the deflate algorithm that is used by Zip and gzip archives.
+
+URL: http://zlib.net/

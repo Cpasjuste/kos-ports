@@ -2,6 +2,10 @@
 PORTNAME = 			libbz2
 PORTVERSION = 		1.0.6
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           BSD-like (see LICENSE in the source distribution)
+SHORT_DESC =        Block-sorting compression library
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

@@ -1,0 +1,6 @@
+bzip2 is a freely available, open-source data compressor. It is believed by its
+author to be unencumbered by patents. It typically compresses data to within
+10-15% of the best available techniques while maintaining higher compression and
+decompression speed.
+
+URL: http://bzip.org/

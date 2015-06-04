@@ -2,6 +2,10 @@
 PORTNAME = 			zlib
 PORTVERSION = 		1.2.8
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           zlib License - http://opensource.org/licenses/Zlib
+SHORT_DESC =        Lossless data compression library
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 
