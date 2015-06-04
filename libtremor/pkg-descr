@@ -1,0 +1,10 @@
+Vorbis is a public-domain, patent-free, lossy audio compression format usually
+paired with the Ogg file format. libtremor is decoder library for the Vorbis
+audio format that exclusively uses integer arithmetic, providing a potentially
+more efficient library where floating-point operations are prohibitively
+expensive.
+
+This library is a mostly drop-in replacement for the liboggvorbisplay/libvorbis/
+libogg stack.
+
+URL: http://www.vorbis.com/

@@ -2,6 +2,10 @@
 PORTNAME = 			libogg
 PORTVERSION = 		1.3.2
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           3-clause BSD (see COPYING in the source distribution)
+SHORT_DESC =        Multimedia container format access library
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

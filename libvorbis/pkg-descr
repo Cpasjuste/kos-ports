@@ -1,0 +1,9 @@
+Vorbis is a public-domain, patent-free, lossy audio compression format usually
+paired with the Ogg file format. libvorbis is the official encoder/decoder
+library for the Vorbis audio format.
+
+libvorbis is the full floating-point codec library for Vorbis and must be used
+with libogg. For KOS-specific support, please use these two libraries along with
+the liboggvorbisplay library.
+
+URL: http://www.vorbis.com/

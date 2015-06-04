@@ -2,6 +2,10 @@
 PORTNAME = 			liboggvorbisplay
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           KOS License
+SHORT_DESC =        Ogg Vorbis audio streaming library
+
 DEPENDENCIES =      libvorbis
 
 # What files we need to download, and where from.

@@ -1,0 +1,4 @@
+liboggvorbisplay is the KOS glue library for libvorbis and libogg. This library
+provides a simple interface for spawning a decoding thread and maintaining the
+state of the stream in the background of any other computations that you might
+have ongoing.

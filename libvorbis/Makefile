@@ -2,6 +2,10 @@
 PORTNAME = 			libvorbis
 PORTVERSION = 		1.3.5
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           3-clause BSD (see COPYING in the source distribution)
+SHORT_DESC =        Vorbis audio codec library (floating-point version)
+
 DEPENDENCIES =      libogg
 
 # What files we need to download, and where from.

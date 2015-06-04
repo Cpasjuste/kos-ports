@@ -1,0 +1,5 @@
+Ogg is an open multimedia container format used along with the Vorbis audio
+codec (amongst other multimedia formats). This library provides an API for
+accessing ogg files and other ogg bitstreams.
+
+URL: https://www.xiph.org/ogg/
