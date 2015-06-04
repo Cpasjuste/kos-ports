@@ -2,6 +2,10 @@
 PORTNAME = 			libpng
 PORTVERSION = 		1.6.17
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           zlib License - http://opensource.org/licenses/Zlib
+SHORT_DESC =        Freely available lossless image compression library (with KOS additions)
+
 DEPENDENCIES =      zlib
 
 # What files we need to download, and where from.

@@ -2,6 +2,10 @@
 PORTNAME = 			libjpeg
 PORTVERSION = 		9.1
 
+MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
+LICENSE =           IJG license (see README in the source distribution!)
+SHORT_DESC =        Freely available lossy image compression library (with KOS additions)
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 
