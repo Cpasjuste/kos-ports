@@ -2,6 +2,10 @@
 PORTNAME = 			libimageload
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        Library for decoding BMP, JPEG, and PCX images
+
 DEPENDENCIES =      libjpeg
 
 # What files we need to download, and where from.

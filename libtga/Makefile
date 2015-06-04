@@ -2,6 +2,10 @@
 PORTNAME = 			libtga
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        Library for decoding TGA images
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

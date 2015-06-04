@@ -2,6 +2,10 @@
 PORTNAME = 			libpcx
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        Library for decoding PCX images
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

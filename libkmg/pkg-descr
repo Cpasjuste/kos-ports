@@ -1,0 +1,4 @@
+The KMG image format is a KOS-specific image format for storing platform-
+specific images. These images can be pre-transformed to various formats that
+make them much nicer to work with on the Dreamcast (such as pre-twiddling them
+or storing them with VQ compression).
