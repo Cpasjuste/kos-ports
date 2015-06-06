@@ -1,0 +1,6 @@
+libimageload is a convenience library for loading multiple image file formats.
+It relies on libjpeg for JPEG decoding and has its own built-in decoding code
+for PCX and BMP files.
+
+The PCX decoding code in this library only supports 8bpp paletted images. Any
+other PCX formats will not work.

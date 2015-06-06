@@ -1,0 +1,2 @@
+libtga is a small library for decoding TGA image files. This library is limited
+to supporting only uncompressed 32bpp RGBA images.

@@ -1,0 +1,3 @@
+libpcx is a small library for decoding PCX image files. This library is limited
+to supporting only 8bpp paletted PCX images. All other PCX files will be
+rejected by the decoding code.
