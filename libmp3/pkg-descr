@@ -1,0 +1,12 @@
+libmp3 is a library for decoding MP3 audio files and streaming them to the
+Dreamcast's sound hardware. The library itself is a small bit of glue code
+wrapped around the XingMP3 decoding library.
+
+Please note: XingMP3 is licensed under the GNU General Public License version 2
+(or at your option any later version). Thus, you must follow the licensing terms
+for the GPLv2 if you use this library. That basically means anything using this
+library *MUST* be open-source.
+
+Also note: MP3 decoding may or may not be subject to software patents in your
+jurisdiction. Please consult an experienced intellectual property lawyer if you
+have any doubts on this subject.
