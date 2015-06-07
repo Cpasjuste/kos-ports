@@ -2,8 +2,11 @@
 PORTNAME = 			libkosh
 PORTVERSION = 		2.0.0
 
-# No dependencies beyond the base system.
-DEPENDENCIES =
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        The KallistiOS shell (library)
+
+DEPENDENCIES =      libconio
 
 # What files we need to download, and where from.
 GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libkosh

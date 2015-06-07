@@ -1,0 +1,6 @@
+libkosh is a *nix-like shell for KOS, in a convenient library form. This library
+allows you to add a shell to your program with minimal effort(*). libkosh is
+built on top of libconio, providing text-mode I/O.
+
+(*): Minimal effort to add the shell, not minimal effort to find a reason for a
+     shell in the first place. ;-)

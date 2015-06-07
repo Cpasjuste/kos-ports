@@ -1,0 +1,10 @@
+libmodplug is a library for decoding MOD-like tracker music formats. The music
+formats supported by this library are much simpler than those for full PCM
+music like Ogg Vorbis or MP3, but can still provide decent sequenced background
+music for games.
+
+This library, unlike those for Ogg Vorbis and MP3, does not provide sound output
+directly. Look at the example included with KOS for more information about using
+this library for your music.
+
+URL: http://modplug-xmms.sourceforge.net/

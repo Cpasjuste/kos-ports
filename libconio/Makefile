@@ -2,6 +2,10 @@
 PORTNAME = 			libconio
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        Console-like I/O library
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

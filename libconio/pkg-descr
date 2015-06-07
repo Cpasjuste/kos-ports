@@ -1,0 +1,3 @@
+libconio is a simple console-like I/O library for KOS. It provides a relatively
+simple way to deal with text-mode input and output, making it easy to develop
+something akin to a *nix shell.

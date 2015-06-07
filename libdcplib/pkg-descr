@@ -1,0 +1,11 @@
+libdcplib is a Dreamcast "port" of the PLIB suite of game programming libraries.
+Much of the library is essentially rewritten from its original version to make
+it more closely map to the Dreamcast (instead of using OpenGL). The library
+provides a relatively simple object-oriented C++ API of useful primitives for
+writing games.
+
+The Dreamcast version of this library only supports a small subset of the
+primitives provided in current versions of PLIB. This port is based on a very
+old version of PLIB and has not been updated in many years.
+
+URL: http://plib.sourceforge.net/
