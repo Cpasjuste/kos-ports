@@ -2,6 +2,10 @@
 PORTNAME = 			lua
 PORTVERSION = 		5.3.0
 
+MAINTAINER =        Nobody
+LICENSE =           MIT License (http://opensource.org/licenses/MIT)
+SHORT_DESC =        Embeddable scripting language
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

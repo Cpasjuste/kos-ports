@@ -1,0 +1,6 @@
+libparallax is a simple (mostly) wrapper API around the PVR functionality in
+KOS to produce a relatively easy-to-use library for (mostly 2D) game
+programming. It is designed to extend and simplify the native low-level APIs in
+KOS with various functionality for games. In addition, it is designed to be a
+very thin wrapper, so as to be as fast as possible in submitting data to the
+video hardware.

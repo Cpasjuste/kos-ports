@@ -2,6 +2,10 @@
 PORTNAME = 			libparallax
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        Simple (mostly 2D) game API library
+
 DEPENDENCIES =      libpng libjpeg libkmg
 
 # What files we need to download, and where from.

@@ -2,6 +2,10 @@
 PORTNAME = 			libtsunami
 PORTVERSION = 		2.0.0
 
+MAINTAINER =        Nobody
+LICENSE =           KOS License
+SHORT_DESC =        C++ "scene graph" wrapper around libparallax
+
 DEPENDENCIES =      libparallax
 
 # What files we need to download, and where from.

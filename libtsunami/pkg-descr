@@ -1,0 +1,8 @@
+libtsunami is a C++ "scene graph" API, wrapped around libparallax. libtsunami
+was actually designed as a part of the game Feet of Fury and was pulled directly
+from its code (by its original authors) or designed around the same concepts
+used in that game for managing the display.
+
+libtsunami is an object-oriented C++ library that allows you to describe
+drawable objects, animations, and triggers. All of these classes are reference
+counted for ease of memory management.
