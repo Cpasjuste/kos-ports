@@ -267,7 +267,7 @@ SDL_Surface *DC_SetVideoMode(_THIS, SDL_Surface *current,
 //  }
 
 	/* Set up the new mode framebuffer */
-	current->flags = (SDL_FULLSCREEN|SDL_HWSURFACE);
+	current->flags = (SDL_FULLSCREEN|SDL_HWSURFACE|SDL_PREALLOC);
 	current->w = width;
 	current->h = height;
 	current->pitch = pitch;
