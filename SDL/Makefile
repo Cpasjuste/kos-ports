@@ -2,6 +2,10 @@
 PORTNAME = 			SDL
 PORTVERSION = 		1.2.15
 
+MAINTAINER =        Nobody
+LICENSE =           LGPLv2.1
+SHORT_DESC =        Simple Directmedia Library
+
 # No dependencies beyond the base system.
 DEPENDENCIES =
 

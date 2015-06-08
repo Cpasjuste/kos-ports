@@ -1,0 +1,10 @@
+SDL is a cross-platform development library, primarily focused at developing
+games. SDL is written in C and has bindings (not included here) for many other
+programming languages. SDL has been used by many games, including commercial
+ones. SDL provides abstractions for video, sound, joystick/gamepad handling,
+keyboard input, and threads.
+
+The SDL version here is of the older 1.2.x line. The 2.x series has not been
+ported to the Dreamcast.
+
+URL: http://libsdl.org/
