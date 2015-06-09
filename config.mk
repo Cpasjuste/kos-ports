@@ -14,3 +14,7 @@ UNPACK_CMD = tar xf
 # then the build system will automatically try to build any unmet dependencies
 # recursively.
 BUILD_DEPENDS = true
+
+# Select whether or not to validate each file downloaded before unpacking them.
+# This requires Python to be installed.
+VALIDATE_DISTFILES = true

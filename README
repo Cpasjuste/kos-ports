@@ -23,6 +23,23 @@ This new version of the kos-ports tree sprung into being in May of 2015 and will
 be included with the next version of KOS to be released after that point.
 
 
+Dependencies
+------------
+kos-ports has very few external dependencies beyond a normally functioning KOS
+toolchain. Here's the list:
+
+1. Some way of downloading files from the terminal. The ports collection uses
+   curl by default, but there's a configuration option to use whatever tool you
+   might happen to have (and an example of using wget).
+2. Git and SVN are required for some of the ports in the ports collection.
+3. In order to validate downloaded source packages, Python is needed. Python
+   2.7.x has been tested and found working. If you don't have Python, please
+   edit the config.mk file to disable source package validation (or, better yet,
+   install Python).
+4. A relatively sane *nix shell and make program are also required. Everything's
+   been tested with Bash and GNU Make.
+
+
 Differences from the old ports tree
 -----------------------------------
 Unlike the old ports tree, this new ports tree is meant to not keep all of the
@@ -60,6 +77,7 @@ Lesser used targets (mainly for internal use):
 - version-check: Check the version of the port that is currently installed.
 - depends-check: Check if all dependencies of the port are installed.
 - unpack: Unpack any fetched packages for the port.
+- validate-dist: Check downloaded distfiles for validity (if enabled).
 
 
 Porting a new library

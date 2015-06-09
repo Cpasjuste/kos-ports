@@ -6,7 +6,7 @@
 
 KOS_MAKEFILE ?= KOSMakefile.mk
 
-build-stamp: fetch unpack copy-kos-files
+build-stamp: fetch validate_dist unpack copy-kos-files
 	@if [ -z "${DISTFILE_DIR}" ] ; then \
 		$(MAKE) -C build/${PORTNAME}-${PORTVERSION} -f ${KOS_MAKEFILE} ; \
 	else \
