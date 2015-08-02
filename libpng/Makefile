@@ -1,6 +1,6 @@
 # Port Metadata
 PORTNAME = 			libpng
-PORTVERSION = 		1.6.17
+PORTVERSION = 		1.6.18
 
 MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
 LICENSE =           zlib License - http://opensource.org/licenses/Zlib
