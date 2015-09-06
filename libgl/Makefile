@@ -1,5 +1,5 @@
 # Port Metadata
-PORTNAME = 			libgl
+PORTNAME = 			libGL
 PORTVERSION = 		2.0.0
 
 MAINTAINER =        Josh Pearson <ph3nom@users.sourceforge.net>
@@ -12,7 +12,7 @@ DEPENDENCIES =
 # What files we need to download, and where from.
 GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libgl
 
-TARGET =			libgl.a
+TARGET =			libGL.a
 INSTALLED_HDRS =	include/gl.h include/glext.h include/glu.h include/glut.h
 HDR_INSTDIR =       GL
 
