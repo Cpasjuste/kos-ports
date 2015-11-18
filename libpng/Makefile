@@ -1,6 +1,6 @@
 # Port Metadata
 PORTNAME = 			libpng
-PORTVERSION = 		1.6.18
+PORTVERSION = 		1.6.19
 
 MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
 LICENSE =           zlib License - http://opensource.org/licenses/Zlib
@@ -9,7 +9,8 @@ SHORT_DESC =        Freely available lossless image compression library (with KO
 DEPENDENCIES =      zlib
 
 # What files we need to download, and where from.
-DOWNLOAD_SITE = 	ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng16
+DOWNLOAD_SITES =	ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng16 \
+					ftp://ftp.simplesystems.org/pub/libpng/png/src/history/libpng16
 DOWNLOAD_FILES = 	${PORTNAME}-${PORTVERSION}.tar.gz
 
 TARGET =			libpng.a
