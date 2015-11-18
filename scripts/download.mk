@@ -12,9 +12,20 @@ fetch:
 	@cd dist ; \
 	for _file in ${DOWNLOAD_FILES}; do \
 		if [ ! -f "$$_file" ] ; then \
-			echo "Fetching $$_file from ${DOWNLOAD_SITE} ..." ; \
-			file="${DOWNLOAD_SITE}/$$_file" ; \
-			${FETCH_CMD} $$file ; \
+			if [ -n "${DOWNLOAD_SITES}" ] ; then \
+				for _site in ${DOWNLOAD_SITES}; do \
+					echo "Fetching $$_file from $$_site ..." ; \
+					file="$$_site/$$_file" ; \
+					${FETCH_CMD} $$file ; \
+					if [ "$$?" -eq 0 ] ; then \
+						break; \
+					fi ; \
+				done ; \
+			else \
+				echo "Fetching $$_file from ${DOWNLOAD_SITE} ..." ; \
+				file="${DOWNLOAD_SITE}/$$_file" ; \
+				${FETCH_CMD} $$file ; \
+			fi ; \
 		fi ; \
 	done
 
