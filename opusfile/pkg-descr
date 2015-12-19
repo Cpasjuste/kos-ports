@@ -1,0 +1,5 @@
+The opusfile library provides seeking, decode, and playback of Opus streams in
+the Ogg container (.opus files) including over http(s) on posix and windows
+systems.
+
+URL: http://www.opus-codec.org/
