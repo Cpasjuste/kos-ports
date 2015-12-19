@@ -18,3 +18,6 @@ BUILD_DEPENDS = true
 # Select whether or not to validate each file downloaded before unpacking them.
 # This requires Python to be installed.
 VALIDATE_DISTFILES = true
+
+# Autotools host triple. This should generally be the same as the KOS host.
+AUTOTOOLS_HOST = $(KOS_CC_PREFIX)

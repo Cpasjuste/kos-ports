@@ -6,6 +6,7 @@
 
 KOS_MAKEFILE ?= KOSMakefile.mk
 
+ifneq ($(PORT_AUTOTOOLS), 1)
 build-stamp: fetch validate-dist unpack copy-kos-files
 	@if [ -z "${DISTFILE_DIR}" ] ; then \
 		$(MAKE) -C build/${PORTNAME}-${PORTVERSION} -f ${KOS_MAKEFILE} ; \
@@ -13,10 +14,23 @@ build-stamp: fetch validate-dist unpack copy-kos-files
 		$(MAKE) -C build/${DISTFILE_DIR} -f ${KOS_MAKEFILE} ; \
 	fi
 	touch build-stamp
+else
+build-stamp: fetch validate-dist unpack copy-kos-files
+	@if [ -z "${DISTFILE_DIR}" ] ; then \
+		cd build/${PORTNAME}-${PORTVERSION} ; \
+		CC=kos-cc ${CONFIGURE_DEFS} ./configure --prefix=${KOS_PORTS}/${PORTNAME}/inst --host=${AUTOTOOLS_HOST} ${CONFIGURE_ARGS} ; \
+		$(MAKE) ${MAKE_TARGET} ; \
+	else \
+		cd build/${DISTFILE_DIR} ; \
+		CC=kos-cc ${CONFIGURE_DEFS} ./configure --prefix=${KOS_PORTS}/${PORTNAME}/inst --host=${AUTOTOOLS_HOST} ${CONFIGURE_ARGS} ; \
+		$(MAKE) ${MAKE_TARGET} ; \
+	fi
+	touch build-stamp
+endif
 
 install: setup-check version-check depends-check force-install
 
-force-install: build-stamp
+force-install: build-stamp $(PREINSTALL)
 	@if [ ! -d "inst" ] ; then \
 		mkdir inst ; \
 	fi
