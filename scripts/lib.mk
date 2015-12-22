@@ -19,4 +19,8 @@ linklib:
 	rm -f ${TARGET}
 	${KOS_AR} rcs ${TARGET} $(OBJS) $(LIB_OBJS)
 
+clean:
+	-rm -f $(OBJS) $(LIB_OBJS)
+	-rm -f $(TARGET)
+
 include ${KOS_BASE}/Makefile.rules
