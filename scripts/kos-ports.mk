@@ -12,7 +12,6 @@ all:
 include ${KOS_PORTS}/config.mk
 
 include ${KOS_PORTS}/scripts/setup.mk
-include ${KOS_PORTS}/scripts/lib.mk
 include ${KOS_PORTS}/scripts/download.mk
 include ${KOS_PORTS}/scripts/unpack.mk
 include ${KOS_PORTS}/scripts/clean.mk
