@@ -73,8 +73,6 @@
 
 /* Enable various audio drivers */
 #define SDL_AUDIO_DRIVER_DC	1
-#define SDL_AUDIO_DRIVER_DISK	1
-#define SDL_AUDIO_DRIVER_DUMMY	1
 
 /* Enable various cdrom drivers */
 #define SDL_CDROM_DC	1
@@ -93,6 +91,5 @@
 
 /* Enable various video drivers */
 #define SDL_VIDEO_DRIVER_DC	1
-#define SDL_VIDEO_DRIVER_DUMMY	1
 
 #endif /* _SDL_config_dreamcast_h */
