@@ -55,7 +55,10 @@ force-install: build-stamp $(PREINSTALL)
 		cp $$_file ../../inst/include ; \
 	done ; \
 	if [ -n "${HDR_DIRECTORY}" ] ; then \
-		cp -r ${HDR_DIRECTORY}/ ../../inst/include ; \
+		cp -R ${HDR_DIRECTORY}/. ../../inst/include ; \
+	fi ; \
+	if [ -n "${EXAMPLES_DIR}" ] ; then \
+		cp -R ${EXAMPLES_DIR}/. ../../inst/examples ; \
 	fi
 
 	@if [ -n "${HDR_INSTDIR}" ] ; then \
@@ -68,6 +71,12 @@ force-install: build-stamp $(PREINSTALL)
 
 	@rm -f ${KOS_PORTS}/lib/${TARGET}
 	@ln -s ${KOS_PORTS}/${PORTNAME}/inst/lib/${TARGET} ${KOS_PORTS}/lib/${TARGET}
+
+	@rm -f ${KOS_PORTS}/examples/${PORTNAME}
+
+	@if [ -n "${EXAMPLES_DIR}" ] ; then \
+		ln -s ${KOS_PORTS}/${PORTNAME}/inst/examples ${KOS_PORTS}/examples/${PORTNAME} ; \
+	fi
 
 	@echo "Marking ${PORTNAME} ${PORTVERSION} as installed."
 	@echo "${PORTVERSION}" > "${KOS_PORTS}/lib/.kos-ports/${PORTNAME}"
