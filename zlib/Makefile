@@ -1,6 +1,6 @@
 # Port Metadata
 PORTNAME = 			zlib
-PORTVERSION = 		1.2.10
+PORTVERSION = 		1.2.11
 
 MAINTAINER =        Lawrence Sebald <ljsebald@users.sourceforge.net>
 LICENSE =           zlib License - http://opensource.org/licenses/Zlib
