@@ -9,7 +9,14 @@ uninstall:
 		echo "Uninstalling ${PORTNAME}..." ; \
 		rm -f ${KOS_PORTS}/lib/.kos-ports/${PORTNAME} ; \
 		rm -f ${KOS_PORTS}/lib/${TARGET} ; \
-		if [ -n "${HDR_INSTDIR}" ] ; then \
+		if [ -n "${HDR_COMDIR}" ] ; then \
+			for _file in ${KOS_PORTS}/${PORTNAME}/inst/include/*; do \
+				rm -f ${KOS_PORTS}/include/${HDR_COMDIR}/`basename $$_file` ; \
+			done ; \
+			if [ -z "$$(ls -A ${KOS_PORTS}/include/${HDR_COMDIR})" ] ; then \
+				rm -rf ${KOS_PORTS}/include/${HDR_COMDIR} ; \
+			fi ; \
+		elif [ -n "${HDR_INSTDIR}" ] ; then \
 			rm -f ${KOS_PORTS}/include/${HDR_INSTDIR} ; \
 		else \
 			rm -f ${KOS_PORTS}/include/${PORTNAME} ; \

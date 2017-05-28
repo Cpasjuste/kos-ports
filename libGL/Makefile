@@ -14,7 +14,7 @@ GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libgl
 
 TARGET =			libGL.a
 INSTALLED_HDRS =	include/gl.h include/glext.h include/glu.h include/glut.h
-HDR_INSTDIR =       GL
+HDR_COMDIR =		GL
 
 # KOS Distributed extras (to be copied into the build tree)
 KOS_DISTFILES =		KOSMakefile.mk

@@ -61,7 +61,13 @@ force-install: build-stamp $(PREINSTALL)
 		cp -R ${EXAMPLES_DIR}/. ../../inst/examples ; \
 	fi
 
-	@if [ -n "${HDR_INSTDIR}" ] ; then \
+	@if [ -n "${HDR_COMDIR}" ] ; then \
+		mkdir -p ${KOS_PORTS}/include/${HDR_COMDIR} ; \
+		for _file in ${KOS_PORTS}/${PORTNAME}/inst/include/*; do \
+			rm -f ${KOS_PORTS}/include/${HDR_COMDIR}/`basename $$_file` ; \
+			ln -s $$_file ${KOS_PORTS}/include/${HDR_COMDIR} ; \
+		done ; \
+	elif [ -n "${HDR_INSTDIR}" ] ; then \
 		rm -f ${KOS_PORTS}/include/${HDR_INSTDIR} ; \
 		ln -s ${KOS_PORTS}/${PORTNAME}/inst/include ${KOS_PORTS}/include/${HDR_INSTDIR} ; \
 	else \
