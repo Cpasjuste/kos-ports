@@ -10,7 +10,7 @@ SHORT_DESC =        Multimedia container format access library
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-DOWNLOAD_SITE = 	http://downloads.xiph.org/releases/ogg
+DOWNLOAD_SITE = 	https://ftp.osuosl.org/pub/xiph/releases/ogg
 DOWNLOAD_FILES = 	${PORTNAME}-${PORTVERSION}.tar.gz
 
 TARGET =			libogg.a

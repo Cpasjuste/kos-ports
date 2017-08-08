@@ -13,7 +13,7 @@ PORT_AUTOTOOLS =	1
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-DOWNLOAD_SITE = 	http://downloads.xiph.org/releases/opus
+DOWNLOAD_SITE = 	https://ftp.osuosl.org/pub/xiph/releases/opus
 DOWNLOAD_FILES = 	${PORTNAME}-${PORTVERSION}.tar.gz
 
 TARGET =			libopus.a

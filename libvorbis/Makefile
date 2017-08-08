@@ -9,7 +9,7 @@ SHORT_DESC =        Vorbis audio codec library (floating-point version)
 DEPENDENCIES =      libogg
 
 # What files we need to download, and where from.
-DOWNLOAD_SITE = 	http://downloads.xiph.org/releases/vorbis
+DOWNLOAD_SITE = 	https://ftp.osuosl.org/pub/xiph/releases/vorbis
 DOWNLOAD_FILES = 	${PORTNAME}-${PORTVERSION}.tar.gz
 
 TARGET =			libvorbis.a
