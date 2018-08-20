@@ -10,8 +10,8 @@ SHORT_DESC =        Block-sorting compression library
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-DOWNLOAD_SITE = 	http://bzip.org/${PORTVERSION}
-DOWNLOAD_FILES = 	bzip2-${PORTVERSION}.tar.gz
+DOWNLOAD_SITE = 	http://cdn-fastly.deb.debian.org/debian/pool/main/b/bzip2/
+DOWNLOAD_FILES = 	bzip2_1.0.6.orig.tar.bz2
 
 TARGET =			libbz2.a
 INSTALLED_HDRS =	bzlib.h
