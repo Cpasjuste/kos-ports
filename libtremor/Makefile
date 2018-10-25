@@ -10,7 +10,7 @@ SHORT_DESC =        Vorbis audio decoder library (integer version)
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-SVN_REPOSITORY =    http://svn.xiph.org/branches/lowmem-branch/Tremor/
+SVN_REPOSITORY =    https://svn.xiph.org/branches/lowmem-branch/Tremor/
 SVN_REVISION =      19480
 
 TARGET =			libtremor.a
