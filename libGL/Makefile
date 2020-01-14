@@ -10,7 +10,7 @@ SHORT_DESC =        OpenGL (tm) like graphics library for KOS
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-GIT_REPOSITORY =    git://git.code.sf.net/p/cadcdev/libgl
+GIT_REPOSITORY =    https://github.com/Cpasjuste/kos-libgl.git
 
 TARGET =			libGL.a
 INSTALLED_HDRS =	include/gl.h include/glext.h include/glu.h include/glut.h
