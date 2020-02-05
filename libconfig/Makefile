@@ -15,7 +15,7 @@ GIT_REPOSITORY =    https://github.com/Cpasjuste/libconfig-dc.git
 
 TARGET =			libconfig.a
 INSTALLED_HDRS =	lib/libconfig.h lib/libconfig.h++
-HDR_INSTDIR =       libconfig
+HDR_INSTDIR =
 
 # Autotools setup work.
 CONFIGURE_ARGS = --disable-shared --disable-examples
