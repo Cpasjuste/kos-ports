@@ -22,7 +22,7 @@ HDR_INSTDIR =       freetype
 
 # Autotools setup work.
 CONFIGURE_ARGS = --host=sh-elf --prefix=$(KOS_PORTS)/freetype/inst --disable-shared --with-harfbuzz=no --with-png=no \
-					CFLAGS="${KOS_CFLAGS} -O3 -I${KOS_PORTS}/include/zlib" \
+					CFLAGS="${KOS_CFLAGS} -I${KOS_PORTS}/include/zlib" \
 					LDFLAGS="${KOS_LDFLAGS}" LIBS="${KOS_LIBS}" CC=${KOS_CC} AR=${KOS_AR} RUNLIB=${KOS_RUNLIB}
 CONFIGURE_DEFS =
 
