@@ -18,7 +18,7 @@ INSTALLED_HDRS =	lib/libconfig.h lib/libconfig.h++
 HDR_INSTDIR =
 
 # Autotools setup work.
-CONFIGURE_ARGS = --disable-shared --disable-examples
+CONFIGURE_ARGS = --disable-shared --disable-examples --disable-cxx
 CONFIGURE_DEFS =
 
 # KOS Distributed extras (to be copied into the build tree)
@@ -29,6 +29,6 @@ PREINSTALL = libconfig_preinstall
 
 libconfig_preinstall:
 	cp build/${PORTNAME}-${PORTVERSION}/lib/.libs/${TARGET} build/${PORTNAME}-${PORTVERSION}
-	cp build/${PORTNAME}-${PORTVERSION}/lib/.libs/libconfig++.a build/${PORTNAME}-${PORTVERSION}
+	#cp build/${PORTNAME}-${PORTVERSION}/lib/.libs/libconfig++.a build/${PORTNAME}-${PORTVERSION}
 
 include ${KOS_PORTS}/scripts/kos-ports.mk
