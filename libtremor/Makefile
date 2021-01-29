@@ -11,7 +11,7 @@ DEPENDENCIES =
 
 # What files we need to download, and where from.
 SVN_REPOSITORY =    https://svn.xiph.org/branches/lowmem-branch/Tremor/
-SVN_REVISION =      19480
+SVN_REVISION =      19257
 
 TARGET =			libtremor.a
 INSTALLED_HDRS =	ivorbiscodec.h ivorbisfile.h sndoggvorbis.h
