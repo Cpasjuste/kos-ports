@@ -10,8 +10,8 @@ SHORT_DESC =	OpenGL (tm) like graphics library for KOS
 DEPENDENCIES =
 
 # What files we need to download, and where from.
-GIT_REPOSITORY =	https://gitlab.com/simulant/GLdc.git
-GIT_CHANGESET = 	8ee28fdaac8df08591b110071137c6d8b023bb15
+GIT_REPOSITORY =    https://gitlab.com/simulant/GLdc.git
+GIT_CHANGESET = 	8c187f67de584a52e3bd351abd217a1a5cdfef35
 
 TARGET =		libGLdc.a
 INSTALLED_HDRS =	include/gl.h include/glext.h include/glu.h include/glkos.h
