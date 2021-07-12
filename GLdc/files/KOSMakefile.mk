@@ -1,9 +1,12 @@
 TARGET = libGLdc.a
 
-OBJS = GL/draw.o GL/flush.o GL/framebuffer.o GL/immediate.o GL/lighting.o GL/state.o GL/texture.o GL/glu.o
-OBJS += GL/matrix.o GL/fog.o GL/error.o GL/clip.o containers/stack.o containers/named_array.o containers/aligned_vector.o GL/profiler.o
+OBJS = containers/aligned_vector.o containers/named_array.o containers/stack.o
+OBJS += GL/clip.o GL/draw.o GL/error.o GL/flush.o GL/fog.o GL/framebuffer.o
+OBJS += GL/glu.o GL/immediate.o GL/lighting.o GL/matrix.o GL/state.o GL/texture.o
+OBJS += GL/util.o GL/yalloc/yalloc.o
+OBJS += GL/platforms/sh4.o
 
-KOS_CFLAGS += -ffast-math -Ofast -Iinclude
+KOS_CFLAGS += -O3 --fast-math -Iinclude -DBACKEND_KOSPVR
 
 defaultall: GL/version.h $(OBJS) subdirs linklib
 
